@@ -1,9 +1,13 @@
 # US_Airline_Sentiment_Analysis_using_Twitter_Data
-Sentiment Analysis, feature creation(TF, TF-IDF), machine learning algorithms (Naive Bayes, logistic regression, SVM)
+
+  - feature creation(bag-of-words, N-gram, TF-IDF, GloVe, Doc2Vec)
+  - machine learning algorithms (Naive Bayes,  SVM, random forest, LSTM networks)
 
 1. Introduction
 
 Sentiment analysis started in early 2000s. Multiple approaches have been developed and a lot of research has been done in various fields afterwards. But only a few studies directly focused on the area of airlines based on Twitter data. Hence, the main purpose of this project is to provide a sentiment classification baseline in the area of US airline service using Twitter data.
+
+
 
 2. Challenges
 
