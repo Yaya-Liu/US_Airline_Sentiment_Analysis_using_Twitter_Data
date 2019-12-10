@@ -26,10 +26,22 @@ Naïve Bayes model, random forest, support vector machine (SVM), and long short-
 
 In order to evaluate the impact caused by the imbalanced data, undersampling and oversampling techniques were used to balanced data.
 
-For feature creation, TF-IDF (frequency–inverse document frequency) with bag-of-words, TF-IDF with the combination of bag-of-words, bigrams and trigrams were used to create features. Since these two methods are based on bag-of-words, they do not preserve the order of the words in each Tweet. It is unlikely that they can capture the prevailing context of Tweets. Therefore, GloVe pre-trained word representation vectors (100-dimensional) were used to represent each word. For a Tweet, I added up the vector of each word in this Tweet and took the average of the sum to represent this Tweet.
+For feature creation, TF-IDF (frequency–inverse document frequency) with bag-of-words, TF-IDF with the combination of bag-of-words, bigrams and trigrams were used to create features. Since these two methods are based on bag-of-words, they do not preserve the order of the words in each Tweet. It is unlikely that they can capture the prevailing context of Tweets. Therefore, GloVe pre-trained word representation vectors (100-dimensional) were used to represent each word. For a Tweet, I added up the vector of each word in this Tweet and took the average of the sum to represent this Tweet. In addition, Doc2Vec was also used to embed each Tweet.
 
 For model evaluation, micro-average recall, precision, F1 score were used to measure model performance. The micro-average is the average score for each class. 
+
 Micro-average Recall = (Recallclass1 + Recallclass2 + Recallclass3) / 3
+
 Micro-average Precision = (Precisionclass1 + Precisionclass2 + Precisionclass3) / 3
+
 Micro-average F1 score = (F1class1 + F1class2 + F1class3) / 3
+
 For each class, recall, precision and F1 score can be calculated like binary classification. In binary classification model, recall is the ratio of correctly classified instances for one class of overall instances in this class. Precision is the fraction of the correctly classified instances for one class of the overall instances which are classified to this class. F1 score is the harmonic mean of the precision and recall. It keeps a balance between precision and recall and gets a comprehensive evaluation of the models.
+
+4. Data  
+
+Data is from Kaggle. It includes 14, 640 Tweets covering six U.S. airline companies. Each Tweet has already been labeled as “negative”, “neutral” or “positive” class. Among these Tweets, 9, 178 Tweets are negative, 3, 099 Tweets are neutral, and 2, 363 Tweets are positive. 
+
+Data link: https://www.kaggle.com/welkin10/airline-sentiment
+
+
