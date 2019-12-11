@@ -15,7 +15,9 @@ The challenges of this project are associated with Twitter data.
 
 First, the service-related data from Twitter is often unbalanced. There are way more negative Tweets than positive and neutral Tweets, which makes sense because people who has an awful experience is more likely to share that experience on Twitter. The imbalanced data might have an impact on sentiment classification. 
 
-Second, Tweets are often very short. They may not include enough context to decipher things like irony, sarcasm, etc. Third, unlike formal publications, Tweets often have a lot of noise comparing to published articles, such as emojis, emoticons, external links, user mention, a lot of white spaces, etc. Tweets require extra text clean before feeding them to machine learning models. 
+Second, Tweets are often very short. They may not include enough context to decipher things like irony, sarcasm, etc. 
+
+Third, unlike formal publications, Tweets often have a lot of noise comparing to published articles, such as emojis, emoticons, external links, user mention, a lot of white spaces, etc. Tweets require extra text clean before feeding them to machine learning models. 
 
 In addition, since most of the Tweets are very short, it is essential to identify which type of noise should be kept. 
 
