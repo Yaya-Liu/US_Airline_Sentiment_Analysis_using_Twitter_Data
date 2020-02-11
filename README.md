@@ -47,6 +47,7 @@ Data is from Kaggle. It includes 14, 640 Tweets covering six U.S. airline compan
 Data link: https://www.kaggle.com/welkin10/airline-sentiment
 
 5. Results
+
 Please check file "US Airline sentiment analysis using Twitter data .pdf"
 
 
