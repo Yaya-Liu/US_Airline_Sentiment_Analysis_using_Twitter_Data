@@ -24,7 +24,7 @@ In addition, since most of the Tweets are very short, it is essential to identif
 
 3. Methods    
 
-Naïve Bayes model, random forest, support vector machine (SVM), and long short-term memory networks (LSTM networks) were used to perform sentiment analysis. 
+Naïve Bayes model, random forest, support vector machine (SVM), and long short-term memory networks (LSTM networks) were used to conduct sentiment analysis. 
 
 In order to evaluate the impact caused by the imbalanced data, undersampling and oversampling techniques were used to balanced data.
 
@@ -45,5 +45,8 @@ For each class, recall, precision and F1 score can be calculated like binary cla
 Data is from Kaggle. It includes 14, 640 Tweets covering six U.S. airline companies. Each Tweet has already been labeled as “negative”, “neutral” or “positive” class. Among these Tweets, 9, 178 Tweets are negative, 3, 099 Tweets are neutral, and 2, 363 Tweets are positive. 
 
 Data link: https://www.kaggle.com/welkin10/airline-sentiment
+
+5. Results
+Please check file ""
 
 
