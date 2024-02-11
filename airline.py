@@ -114,7 +114,7 @@ airline_sub['label_doc2vec'] = airline_sub['airline_sentiment'].map({'negative':
 airline_sub['text_length'] = airline_sub['text'].apply(lambda x: len(word_tokenize(x)))             # add a column to store the length of each tweet
 #airline_sub.head(5)   
     
-# show world cloud graph
+# show word cloud graph
 def show_wordcloud(data):
     wordcloud = WordCloud(
         background_color = 'white',
@@ -172,14 +172,14 @@ def airline_EDA():
     plt.ylim(0, 50)
     plt.show()   
     
-    # show wourld cloud for negative, neutral and positive tweets
+    # show word cloud for negative, neutral and positive tweets
     airline_sub_neg = airline_sub.loc[airline_sub['airline_sentiment'] == 'negative']   # select rows with negative sentiment
     airline_sub_neu = airline_sub.loc[airline_sub['airline_sentiment'] == 'neutral']    # select rows with neutral sentiment    
     airline_sub_pos = airline_sub.loc[airline_sub['airline_sentiment'] == 'positive']   # select rows with positive sentiment
 
-    show_wordcloud(airline_sub_neg['text'])     # show world cloud with negative sentiment
-    show_wordcloud(airline_sub_neu['text'])     # show world cloud with neutral sentiment
-    show_wordcloud(airline_sub_pos['text'])     # show world cloud with positive sentiment    
+    show_wordcloud(airline_sub_neg['text'])     # show word cloud with negative sentiment
+    show_wordcloud(airline_sub_neu['text'])     # show word cloud with neutral sentiment
+    show_wordcloud(airline_sub_pos['text'])     # show word cloud with positive sentiment    
  
 def stemmer_text(text):
     text = word_tokenize(str(text))   # Init the Wordnet Lemmatizer    
